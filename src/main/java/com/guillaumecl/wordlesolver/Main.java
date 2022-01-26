@@ -50,7 +50,7 @@ score[W] = sum / word_count.
                     return false;
                 }
             } else if (mustContain[idx]) {
-                if (!wordContainsChar(word, guess[idx])) {
+                if (!wordContainsChar(word, guess[idx]) || guess[idx] == word[idx]) {
                     return false;
                 }
             } else {
